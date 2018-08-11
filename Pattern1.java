@@ -1,25 +1,30 @@
-/*Print the following pattern
-1
-22
-333
-4444
-55555 */
-
 import java.io.*;
 import java.util.Scanner;
-public class Pattern1{
-	public static void main(String args[]){
-		Scanner scanner=new Scanner(System.in);
-		int i,j;
-		for(i=0;i<=5;i++)
-		{
-			System.out.println("");
-			for(j=i;j>0;j--)
-			{
-				System.out.print(i);
+public class Pattern1
+{
+public static void main(String[] args)
+{
+int i,j;
+Scanner scanner=new Scanner(System.in);
+System.out.println("Pattern: ");
 
-			}
-		}
-		//return 0;
-	}
+for(i=1;i<=7;i++)
+{
+System.out.println("");
+for(j=1;j<=i;j++)
+{
+System.out.print(j+" ");
+}
+}
+
+for(i=6;i>=1;i--)
+{
+System.out.println("");
+for(j=1;j<=i;j++)
+{
+System.out.print(j+" ");
+}
+}
+
+}
 }
